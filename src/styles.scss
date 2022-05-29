@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+  font-family: "Exo 2" !important;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #111122;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+/**
+ * Foundation for Sites
+ * Version 6.7.4
+ * https://get.foundation
+ * Licensed under MIT Open Source
+ */
+
+@import '~foundation-sites/scss/foundation';
+@include foundation-everything(true);

@@ -1,0 +1,20 @@
+$dark-gray: #1d1d1d;
+
+.footer {
+    background-color: $dark-gray;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.cell {
+    opacity: 0.7;
+}
+
+.socials {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.socials:hover {
+    filter: brightness(175%);
+}

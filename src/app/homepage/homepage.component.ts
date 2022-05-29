@@ -14,7 +14,7 @@ declare var Parallax: any;
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css'],
+  styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent implements OnInit, AfterViewInit {
   x = 0;
@@ -37,26 +37,26 @@ export class HomepageComponent implements OnInit, AfterViewInit {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event: any) {
     let y = window.pageYOffset;
-    let layer1 = ViewChild('building-1');
-    let movement = -y * 0.4;
-    layer1!.style.transform = 'translatey(' + movement + 'px)';
-    let layer1bottom = ViewChild('building-bottom-1');
-    layer1bottom!.style.transform = 'translatey(' + movement + 'px)';
-    let layer2 = ViewChild('building-2');
-    movement = -y * 0.3;
-    layer2!.style.transform = 'translatey(' + movement + 'px)';
-    let layer2bottom = ViewChild('building-bottom-2');
-    layer2bottom!.style.transform = 'translatey(' + movement + 'px)';
-    let layer3 = ViewChild('building-3');
-    movement = -y * 0.2;
-    layer3!.style.transform = 'translatey(' + movement + 'px)';
-    let layer3bottom = ViewChild('building-bottom-3');
-    layer3bottom!.style.transform = 'translatey(' + movement + 'px)';
-    let layer4 = ViewChild('building-4');
-    movement = -y * 0.1;
-    layer4!.style.transform = 'translatey(' + movement + 'px)';
-    let building4bottom = ViewChild('building-bottom-4');
-    building4bottom!.style.transform = 'translatey(' + movement + 'px)';
+    let layer1 = document.getElementById('building-1');
+    let movement = -y * 0.1;
+    layer1!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer1bottom =  document.getElementById('building-bottom-1');
+    layer1bottom!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer2 =  document.getElementById('building-2');
+    movement = -y * 0.09;
+    layer2!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer2bottom =  document.getElementById('building-bottom-2');
+    layer2bottom!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer3 =  document.getElementById('building-3');
+    movement = -y * 0.08;
+    layer3!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer3bottom =  document.getElementById('building-bottom-3');
+    layer3bottom!.style.transform = 'translatey(' + movement + 'vh)';
+    let layer4 = document.getElementById('building-4');
+    movement = -y * 0.07;
+    layer4!.style.transform = 'translatey(' + movement + 'vh)';
+    let building4bottom = document.getElementById('building-bottom-4');
+    building4bottom!.style.transform = 'translatey(' + movement + 'vh)';
   }
   /* 
   @HostListener('document:mousemove', ['$event']) 

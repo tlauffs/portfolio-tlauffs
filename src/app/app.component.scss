@@ -1,0 +1,45 @@
+.title-bar {
+    background-color: rgba($color: #181818, $alpha: 0.3);
+    padding: 0.2rem;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+}
+
+.top-bar {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    z-index: 1000;
+}
+
+.menu {
+    justify-content: right;
+}
+
+.button{
+    color: #e6f2ff;
+}
+
+.button:hover {
+  color: #2CCCC3;
+  filter: brightness(150%);
+}
+
+.nav-ele {
+    height: 50px;
+    line-height: 50px;
+    color: #808080;
+    border-bottom: 1px solid  #333333;
+   // border-top: 1px solid  #333333;
+}
+
+.nav-ele:hover {
+    color: #2CCCC3;
+    filter: brightness(140%);
+}
+
+.socials:hover {
+    svg {
+        fill: #E60576;
+    }
+    filter: brightness(120%);
+}
