@@ -70,7 +70,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #2CCCC3,
+  //primary: #2CCCC3,
+  primary: #1BA098,
   secondary: #767676,
   success: #1779ba,
   warning: #ffae00,
@@ -376,8 +377,8 @@ $closebutton-size: (
   medium: 2em,
 );
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color: #cccccc;
+$closebutton-color-hover: #1BA098;
 
 // 16. Drilldown
 // -------------

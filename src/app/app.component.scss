@@ -1,3 +1,14 @@
+.side-nav {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+    background-color: #181818;
+    z-index: 1000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
 .title-bar {
     background-color: rgba($color: #181818, $alpha: 0.3);
     padding: 0.2rem;
@@ -20,7 +31,7 @@
 }
 
 .button:hover {
-  color: #2CCCC3;
+  color: #1BA098;
   filter: brightness(150%);
 }
 
@@ -33,13 +44,35 @@
 }
 
 .nav-ele:hover {
-    color: #2CCCC3;
+    color: #1BA098;
+    filter: brightness(140%);
+}
+
+.close-button:hover {
     filter: brightness(140%);
 }
 
 .socials:hover {
     svg {
-        fill: #E60576;
+        fill: #DEB992;
     }
     filter: brightness(120%);
+}
+
+.social-div:hover {
+    transform: scale(1.5);
+}
+
+.menu-btn {
+    font-size:30px;
+    cursor:pointer;
+    position: fixed; 
+    top:2rem; 
+    left:2rem; 
+    z-index: 999;
+}
+
+.menu-btn:hover {
+    color:#1BA098;
+    transform: scale(1.25);
 }

@@ -23,7 +23,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
   inity = 0;
   speed = 0.2;
   @ViewChild('backgroundscene') scene: ElementRef | undefined;
-  @ViewChild('headertext') text: ElementRef | undefined;
+ // @ViewChild('headertext') text: ElementRef | undefined;
 
   constructor() {}
 
@@ -31,7 +31,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     var parallaxInstance = new Parallax(this.scene?.nativeElement);
-    var parallaxInstanceText = new Parallax(this.text?.nativeElement);
+    // var parallaxInstanceText = new Parallax(this.text?.nativeElement);
   }
 
   @HostListener('window:scroll', ['$event']) // for window scroll events

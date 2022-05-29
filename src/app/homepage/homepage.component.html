@@ -1,17 +1,6 @@
 <div class="outer-container" style="margin: 0 !important">
   <div class="background-container">
     <div id="background-scene" #backgroundscene class="background-scene">
-      <!--  <h1 class="header-text animate__animated animate__fadeInLeft" #headertext id="header-text" style="z-index: 10; animation-delay: 2s;">
-        <span class="letter" data-depth-y="-2.5">T</span>
-        <span class="letter" data-depth-y="3">I</span>
-        <span class="letter" style="margin-right: 1rem" data-depth-y="-1.5">M</span>
-        <span class="letter" data-depth-y="1">L</span>
-        <span class="letter" data-depth-y="-4">A</span>
-        <span class="letter" data-depth-y="-2">U</span>
-        <span class="letter" data-depth-y="1">F</span>
-        <span class="letter" data-depth-y="-1.5">F</span>
-        <span class="letter" data-depth-y="3">S</span>
-      </h1> -->
       <div class="layer">
         <div id="background-gradient"></div>
       </div>
@@ -71,40 +60,62 @@
 </div>
 <div
   class="grid-x"
-  style="overflow: hidden; z-index: 10; text-align: left; margin-left: 4rem"
+  style="
+    overflow: hidden;
+    z-index: 10;
+    text-align: right;
+    margin-right: 5rem;
+    position: relative;
+  "
 >
-  <div class="cell">
-    <h1
-      class="animate__animated animate__fadeInDown"
-      style="animation-delay: 2s; margin-top: 5rem; color: #f2f2f2"
-    >
-      <b>Tim Lauffs</b>
+  <div
+    class="cell animate__animated animate__fadeInDown"
+    style="animation-delay: 2s; margin-top: 5rem; color: #ffffff"
+  >
+    <h1>
+      <b class="letter">T</b>
+      <b class="letter">i</b>
+      <b class="letter" style="margin-right: 0.5rem">m</b>
+      <b class="letter">L</b>
+      <b class="letter">a</b>
+      <b class="letter">u</b>
+      <b class="letter">f</b>
+      <b class="letter">f</b>
+      <b class="letter">s</b>
     </h1>
   </div>
   <div
-    class="cell animate__animated animate__fadeInLeft"
-    style="animation-delay: 2s; color: #d9d9d9"
+    class="cell animate__animated animate__fadeInRight"
+    style="animation-delay: 2s; color: #cccccc"
   >
-    <h4>Interaktive Front-End Web Developer</h4>
+    <h4 class="underline"><i>Front-End Web Developer</i></h4>
   </div>
   <div
-    class="cell animate__animated animate__fadeInLeft"
+    class="cell animate__animated animate__fadeInRight"
+    style="animation-delay: 2s; color: #cccccc"
+  >
+    <p class="underline-2">Try hovering things :)</p>
+  </div>
+  <div
+    class="cell animate__animated animate__fadeInRight"
     style="animation-delay: 2.5s; color: #bfbfbf; margin-top: 3rem"
   >
-    <button class="button hollow" href="#">Contact me!</button>
+    <div>
+      <button class="button hollow" href="#">Contact me!</button>
+    </div>
   </div>
 </div>
-  <!-- <div class="foreground-scene" id="foreground-scene"> -->
-  <!-- <div class="grid-x">
+<!-- <div class="foreground-scene" id="foreground-scene"> -->
+<!-- <div class="grid-x">
     <div class="cell shrink" style="background-color: red; height:100vh; position: fixed; top:0; left:0"> test</div>
     <div class="cell auto" style="background-color: blue; position: relative;">
     </div>
   </div> -->
-  <div class="grid-x" style="position: relative; margin-top: 100vh;">
-    <div
-      class="cell"
-      style="min-height: 1200px; width: 100%; background-color: red"
-    ></div>
-    <app-about-me></app-about-me>
-    <app-projects></app-projects>
-  </div>
+<div class="grid-x" style="position: relative; margin-top: 100vh">
+  <div
+    class="cell"
+    style="min-height: 1200px; width: 100%; background-color: #1d1d1d"
+  ></div>
+  <app-about-me></app-about-me>
+  <app-projects></app-projects>
+</div>
