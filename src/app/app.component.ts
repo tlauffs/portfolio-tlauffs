@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import * as AOS from 'aos';
 declare var $:any
 
 @Component({
@@ -13,6 +14,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     $(document).foundation();
+    AOS.init();
   }
 
   nav_open(){

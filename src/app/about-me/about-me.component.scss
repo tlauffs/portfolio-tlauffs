@@ -1,0 +1,17 @@
+.letter {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+.letter:nth-child(even):hover {
+    -webkit-animation: wobble 1s;
+    animation: wobble 1s;
+    color: #1BA098;
+  }
+  
+.letter:nth-child(odd):hover {
+    -webkit-animation: wobble 1s;
+    animation: wobble 1s;
+    color: #DEB992;
+  }
+  

@@ -3,7 +3,9 @@
     top:0;
     left:0;
     z-index: 10;
-    background-color: #181818;
+    //background-color: #181818;
+    background-color: rgba($color: #181818, $alpha: 0.5);
+    backdrop-filter: blur(6px);
     z-index: 1000;
     transition: 0.5s;
     overflow: hidden;
@@ -63,6 +65,10 @@
     transform: scale(1.5);
 }
 
+.social-div {
+    transition: all 0.3s;
+}
+
 .menu-btn {
     font-size:30px;
     cursor:pointer;
@@ -70,6 +76,7 @@
     top:2rem; 
     left:2rem; 
     z-index: 999;
+    transition: all 0.3s;
 }
 
 .menu-btn:hover {

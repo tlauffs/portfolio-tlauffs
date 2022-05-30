@@ -31,7 +31,8 @@
 						],
 						"styles": [
 							"src/styles.scss",
-							"node_modules/animate.css/animate.min.css"
+							"node_modules/animate.css/animate.min.css",
+							"node_modules/aos/dist/aos.css"
 						/*	"node_modules/foundation-sites/dist/css/foundation.min.css" */
 						],
 						"scripts": [
@@ -105,7 +106,8 @@
 						],
 						"styles": [
 							"src/styles.scss",
-							"node_modules/animate.css/animate.min.css"
+							"node_modules/animate.css/animate.min.css",
+							"node_modules/aos/dist/aos.css"
 						/*	"node_modules/foundation-sites/dist/css/foundation.min.css" */
 						],
 						"scripts": [
