@@ -1,0 +1,24 @@
+.letter {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+.letter:nth-child(even):hover {
+    -webkit-animation: jello 1s;
+    animation: jello 1s;
+    color: #1BA098;
+  }
+  
+.letter:nth-child(odd):hover {
+    -webkit-animation: jello 1s;
+    animation: jello 1s;
+    color: #DEB992;
+  }
+  
+input, textarea{
+    margin-bottom: 0;
+}
+
+.contact-cell {
+    margin-top: 1rem;
+}

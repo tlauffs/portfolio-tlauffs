@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   title = 'homepage';
   @ViewChild('navMenu') navMenu: any;
   navMenuWidth = 0;
+  navOpen = false;
 
   ngOnInit(){
     $(document).foundation();
@@ -19,9 +20,11 @@ export class AppComponent implements OnInit{
 
   nav_open(){
     this.navMenuWidth = 150;
+    this.navOpen = true;
   }
   nav_close(){
     this.navMenuWidth = 0;
+    this.navOpen = false;
   }
 }
 

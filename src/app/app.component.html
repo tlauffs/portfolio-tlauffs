@@ -119,10 +119,11 @@
     </div>
   </div>
 </div>
-<span class="menu-btn" (click)="nav_open()">&#9776;</span>
+<span *ngIf="!navOpen" class="menu-btn" (click)="nav_open()">&#9776;</span>
 <div class="grid-x grid-margin.x">
   <div class="cell auto" style="position: relative; width: 100vw">
+    <div>
     <app-homepage></app-homepage>
-    <app-footer></app-footer>
+  </div>
   </div>
 </div>
