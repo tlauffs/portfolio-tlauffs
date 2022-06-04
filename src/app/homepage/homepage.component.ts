@@ -58,6 +58,11 @@ export class HomepageComponent implements OnInit, AfterViewInit {
     let building4bottom = document.getElementById('building-bottom-4');
     building4bottom!.style.transform = 'translatey(' + movement + 'vh)';
   }
+
+  scroll(ele: string) {
+    document.getElementById(ele)!.scrollIntoView({ behavior: 'smooth' });
+  }
+  
   /* 
   @HostListener('document:mousemove', ['$event']) 
   onMouseMove(e: any) {

@@ -113,3 +113,20 @@
     transform:translate(-10px,-20px);
   }
   
+  .letter {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+.letter:nth-child(even):hover {
+    -webkit-animation: rubberband 1s;
+    animation: rubberband 1s;
+    color: #1BA098;
+  }
+  
+.letter:nth-child(odd):hover {
+    -webkit-animation: rubberband 1s;
+    animation: rubberband 1s;
+    color: #DEB992;
+  }
+  
