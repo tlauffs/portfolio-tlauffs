@@ -1,4 +1,6 @@
 @import "~foundation-sites/scss/foundation";
+@import "/src/assets/foundation/settings";
+@import "/src/assets/foundation/global";
 @include foundation-everything(true);
 
 /* You can add global styles to this file, and also import other style files */
