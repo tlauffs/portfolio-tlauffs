@@ -1,34 +1,33 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import * as AOS from 'aos';
-declare var $:any
+declare var $: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'homepage';
   @ViewChild('homecomp') homecomp: any;
   navMenuWidth = 0;
   navOpen = false;
 
-  ngOnInit(){
+  ngOnInit() {
     $(document).foundation();
     AOS.init();
   }
 
-  scroll(ele: string){
-    document.getElementById(ele)!.scrollIntoView({behavior: "smooth"});
+  scroll(ele: string) {
+    document.getElementById(ele)!.scrollIntoView({ behavior: 'smooth' });
   }
 
-  nav_open(){
+  nav_open() {
     this.navMenuWidth = 150;
     this.navOpen = true;
   }
-  nav_close(){
+  nav_close() {
     this.navMenuWidth = 0;
     this.navOpen = false;
   }
 }
-

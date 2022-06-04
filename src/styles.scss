@@ -1,3 +1,6 @@
+@import "~foundation-sites/scss/foundation";
+@include foundation-everything(true);
+
 /* You can add global styles to this file, and also import other style files */
 html,
 body {
@@ -12,7 +15,7 @@ p {
 }
 
 .green {
-  color:#1BA098;
+  color: #1ba098;
 }
 
 .section {
@@ -20,7 +23,7 @@ p {
   padding-left: 4rem !important;
   padding-right: 4rem !important;
   max-width: 1600px;
-  padding-top: 5rem; 
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -39,20 +42,20 @@ p {
   background: #6d6d6d;
 }
 
-.underline{
+.underline {
   display: inline-block;
   position: relative;
 }
 
 .underline:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #DEB992;
+  background-color: #deb992;
   transform-origin: top right;
   transition: transform 0.25s ease-out;
 }
@@ -62,20 +65,20 @@ p {
   transform-origin: top left;
 }
 
-.underline-2{
+.underline-2 {
   display: inline-block;
   position: relative;
 }
 
 .underline-2:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1BA098;
+  background-color: #1ba098;
   transform-origin: -50% left;
   transition: transform 0.25s ease-out;
 }
@@ -85,20 +88,20 @@ p {
   transform-origin: -50% right;
 }
 
-.underline-3{
+.underline-3 {
   display: inline-block;
   position: relative;
 }
 
 .underline-3:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1BA098;
+  background-color: #1ba098;
   transform-origin: top left;
   transition: transform 0.25s ease-out;
 }
@@ -107,14 +110,3 @@ p {
   transform: scaleX(1);
   transform-origin: top right;
 }
-
-
-/**
- * Foundation for Sites
- * Version 6.7.4
- * https://get.foundation
- * Licensed under MIT Open Source
- */
-
-@import '~foundation-sites/scss/foundation';
-@include foundation-everything(true);
