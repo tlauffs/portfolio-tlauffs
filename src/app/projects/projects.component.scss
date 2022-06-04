@@ -1,0 +1,85 @@
+.letter {
+    position: relative !important;
+    display: inline-block !important;
+  }
+
+.letter:nth-child(even):hover {
+    -webkit-animation: tada 1s;
+    animation: tada 1s;
+    color: #1BA098;
+  }
+  
+.letter:nth-child(odd):hover {
+    -webkit-animation: tada 1s;
+    animation: tada 1s;
+    color: #DEB992;
+  }
+  
+  .top{
+      height: 3rem;
+  }
+
+.back-img {
+    max-height: 270px;
+    @media screen and (max-width: 39.9375em) {
+        max-height: 170px;
+    }
+}
+
+.img-cell{
+    @media screen and (max-width: 39.9375em) {
+        padding: 0rem;
+    }
+}
+
+.text-cell-left{
+    max-width: 450px;
+    margin-left: auto;
+    text-align: right;
+    padding-right: 2rem;
+    @media screen and (max-width: 39.9375em) {
+        padding: 0rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+
+.text-cell-right{
+    max-width: 450px;
+    text-align: left;
+    padding-left: 2rem;
+    @media screen and (max-width: 39.9375em) {
+        padding: 0rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}
+
+
+.background {
+    background-color: rgba($color: #1BA098, $alpha: 1.0);
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.background-right{
+    @media screen and (min-width: 40em) {
+        float: right;
+    }
+    transition: transform 0.1s ease;
+}
+
+.background-left{
+    @media screen and (min-width: 40em) {
+        float: left;
+    }
+    transition: transform 0.1s ease;
+}
+
+.background:hover{
+    background-color: rgba($color: #1BA098, $alpha: 0);
+}

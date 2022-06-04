@@ -9,13 +9,17 @@ declare var $:any
 })
 export class AppComponent implements OnInit{
   title = 'homepage';
-  @ViewChild('navMenu') navMenu: any;
+  @ViewChild('homecomp') homecomp: any;
   navMenuWidth = 0;
   navOpen = false;
 
   ngOnInit(){
     $(document).foundation();
     AOS.init();
+  }
+
+  scroll(ele: string){
+    document.getElementById(ele)!.scrollIntoView({behavior: "smooth"});
   }
 
   nav_open(){
