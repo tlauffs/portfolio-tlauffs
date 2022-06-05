@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import * as AOS from 'aos';
 declare var $: any;
 
@@ -19,8 +26,8 @@ export class AppComponent implements OnInit {
   }
 
   @HostListener('window:beforeunload')
-  doSomething() {
-    window.scrollTo(0, 0);
+  reload() {
+      window.scrollTo(0, 0);
   }
 
   scroll(ele: string) {
