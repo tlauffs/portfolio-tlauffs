@@ -22,6 +22,9 @@ export class ContactComponent implements OnInit {
     message: new FormControl(''),
   });
 
+  formsent = false;
+  formproblem = false;
+
   ngOnInit(): void {}
 
   onSubmit() {
@@ -29,7 +32,7 @@ export class ContactComponent implements OnInit {
       .set('form-name', 'contactform')
       .append('name', this.contactform.value.name)
       .append('email', this.contactform.value.email)
-      .append('art', this.contactform.value.subject)
+      .append('subject', this.contactform.value.subject)
       .append('message', this.contactform.value.message);
 
     this.http
@@ -37,18 +40,20 @@ export class ContactComponent implements OnInit {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       })
       .subscribe(
-        (res) => {},
+        (res) => {
+          this.formsent = true;
+        },
         (err) => {
           if (err instanceof ErrorEvent) {
             //client side error
-            alert('Something went wrong when sending your message.');
+            this.formproblem = true;
             console.log(err.error.message);
           } else {
             //backend error. If status is 200, then the message successfully sent
             if (err.status === 200) {
-              alert('Your message has been sent!');
+              this.formsent = true;
             } else {
-              alert('Something went wrong when sending your message.');
+              this.formproblem = true;
               console.log('Error status:');
               console.log(err.status);
               console.log('Error body:');

@@ -30,7 +30,7 @@
     <form [formGroup]="contactform" name="contactform" (ngSubmit)="onSubmit()">
       <input
         class="underline-3"
-        style="width: 100%; padding-bottom: 1rem"
+        style="width: 100%; margin-bottom: 1rem"
         formControlName="name"
         type="text"
         name="name"
@@ -38,7 +38,7 @@
       />
       <input
         class="underline-3"
-        style="width: 100%; padding-bottom: 1rem"
+        style="width: 100%; margin-bottom: 1rem"
         formControlName="email"
         type="email"
         name="email"
@@ -46,7 +46,7 @@
       />
       <input
         class="underline-3"
-        style="width: 100%; padding-bottom: 1rem"
+        style="width: 100%; margin-bottom: 1rem"
         formControlName="subject"
         type="text"
         name="subject"
@@ -54,16 +54,22 @@
       />
       <textarea
         class="underline-3"
-        style="width: 100%; padding-bottom: 1rem"
+        style="width: 100%;"
         style="min-height: 100px"
         placeholder="Message"
         name="message"
         formControlName="message"
       ></textarea>
-      <button class="button" style="width: 100%" type="submit">
+      <button class="button" style="width: 100%; margin-top: 1rem" type="submit">
         Send Message!
       </button>
     </form>
+    <div *ngIf="formsent" class="alert-sent">
+      <p style="margin: 0; color:white">Thank You! Your message has been sent.</p>
+    </div>
+    <div *ngIf="formproblem" class="alert-not-sent">
+      <p style="margin: 0; color:white">Looks like there was a problem. Feel free to contact me on one of my socials.</p>
+    </div>
     <!-- <form name="form-name" value="contactform"  method="POST">
      
             <p class="underline-3" style="width: 100%">

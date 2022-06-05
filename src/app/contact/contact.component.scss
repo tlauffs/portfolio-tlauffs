@@ -22,3 +22,13 @@ input, textarea{
 .contact-cell {
     margin-top: 1rem;
 }
+
+.alert-sent {
+  background-color:#4ea6e4;
+  padding: 0.85em 1em;
+}
+
+.alert-not-sent {
+  background-color:#cc0066;
+  padding: 0.85em 1em;
+}
