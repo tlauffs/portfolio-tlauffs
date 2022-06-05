@@ -1,7 +1,7 @@
-<div class="grid-x section">
+<div class="grid-x section" style="max-width: 100%">
   <h3
     class="cell"
-    style="margin-bottom: 2rem"
+    style="margin-bottom: 3rem"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
@@ -22,143 +22,122 @@
     <span class="letter">t</span>
     <span class="letter">s</span>
   </h3>
-  <div class="cell top"></div>
+<div class="cell">
   <div
-    class="cell large-6 medium-5 img-cell"
+    class="small-card show-for-small-only"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div
-      class="background background-right"
-      (mousemove)="mouseentercover1($event)"
-      (mouseleave)="mouseleave1()"
-      #imagecover
-    >
-      <img
-        src="/assets/nanotip.PNG"
-        style="opacity: 0.7"
-        class="back-img"
-        alt=""
-      />
-    </div>
+    <p class="green">Project #1</p>
+    <h4 class="title">Twitch Nano Donation App</h4>
   </div>
-  <div
-    class="cell large-6 medium-7 text-cell-right"
-    data-aos="fade-up"
-    data-aos-duration="1000"
-  >
-    <p style="color: #1ba098; margin: 0">Project #1</p>
-    <h4>Twitch Nano Donation App</h4>
-    <div>
+  <div class="card-custom card-1" data-aos="fade-up" data-aos-duration="1000">
+    <div class="card-content">
+      <div class="show-for-medium">
+        <p class="green">Project #1</p>
+        <h4 class="title">Twitch Nano Donation App</h4>
+      </div>
       <p>
         An older App I built that allows twitch streamers to set up crypto
         (nano) donations. Creates a personal donation page, a donation history
         and a OBS overlay.
       </p>
-      <p style="color: #1ba098">Technologies Used</p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Firebase</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Angular</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Angular Material</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Bootstrap</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Nano API</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Typescript</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span style="margin-right: 1.5rem"> Git</span>
-      </p>
-    </div>
-    <div class="grid-x">
-      <div class="cell small-6">
-        <a href="https://github.com/tlauffs/nanotip" target="_blank"  class="button hollow" style="width: 100%; margin-right: 1rem">
-          View Code
-        </a>
-      </div>
-      <div class="cell small-6">
-        <a href="https://nano-tip.com/" target="_blank" class="button" style="width: 100%; margin-left: 1rem">
-          View Demo
-        </a>
+      <p class="green">Technologies Used:</p>
+      <span class="label primary">Firebase</span>
+      <span class="label primary">Angular</span>
+      <span class="label primary">Angular Material</span>
+      <span class="label primary">Bootstrap</span>
+      <span class="label primary">Nano API</span>
+      <span class="label primary">Typescript</span>
+      <span class="label primary">Git</span>
+      <div class="show-for-medium">
+        <div class="flex">
+          <a
+            href="https://nano-tip.com/"
+            target="_blank"
+            class="button primary flex-child"
+            >View Site</a
+          >
+          <a
+            href="https://github.com/tlauffs/nanotip"
+            target="_blank"
+            class="button hollow flex-child"
+            >View Code</a
+          >
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="cell" style="margin-top: 8rem"></div>
   <div
-    class="cell large-6 medium-7 text-cell-left small-order-2 medium-order-1"
+    class="small-card show-for-small-only"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <p style="color: #1ba098; margin: 0">Project #2</p>
-    <h4>Personal Portfolio</h4>
-    <div>
+    <div class="flex">
+      <a
+        href="https://nano-tip.com/"
+        target="_blank"
+        class="button primary flex-child"
+        >View Site</a
+      >
+      <a
+        href="https://github.com/tlauffs/nanotip"
+        target="_blank"
+        class="button hollow flex-child"
+        >View Code</a
+      >
+    </div>
+  </div>
+</div>
+<div class="cell" style="margin-top:3rem">
+  <div
+    class="small-card show-for-small-only"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <p class="green">Project #2</p>
+    <h4 class="title">Personal Portfolio</h4>
+  </div>
+  <div class="card-custom card-2" data-aos="fade-up" data-aos-duration="1000">
+    <div class="card-content">
+      <div class="show-for-medium">
+        <p class="green">Project #2</p>
+        <h4 class="title">Personal Portfolio</h4>
+      </div>
       <p>
-        The Website your on :) I decided to Include this because I decided to
-        try new Technologies making this website and progressed my skills.
+        The Website your on :) I decided to Include this because I learned and improved alot of my skills making this website.
       </p>
-      <p style="color: #1ba098">Technologies Used</p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992">&#9654;</span
-        ><span> Angular</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992; margin-left: 1.5rem"
-          >&#9654;</span
-        ><span> Foundation CSS</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992; margin-left: 1.5rem"
-          >&#9654;</span
-        ><span> Sass</span>
-      </p>
-      <p style="display: inline-block">
-        <span style="font-size: 12px; color: #deb992; margin-left: 1.5rem"
-          >&#9654;</span
-        ><span> Animations</span>
-        <span style="font-size: 12px; color: #deb992; margin-left: 1.5rem"
-          >&#9654;</span
-        ><span> Git</span>
-      </p>
-    </div>
-    <div class="cell">
-      <a href="https://github.com/tlauffs/portfolio-tlauffs" target="_blank" class="button hollow" style="width: 100%; margin-right: 1rem">
-        View Code
-      </a>
+      <p class="green">Technologies Used:</p>
+      <span class="label primary">Angular</span>
+      <span class="label primary">Foundation CSS</span>
+      <span class="label primary">Sass</span>
+      <span class="label primary">Animations</span>
+      <span class="label primary">Git</span>
+      <div class="show-for-medium">
+        <div class="flex">
+          <a
+            href="https://github.com/tlauffs/portfolio-tlauffs"
+            target="_blank"
+            class="button hollow flex-child"
+            >View Code</a
+          >
+        </div>
+      </div>
     </div>
   </div>
   <div
-    class="cell large-6 medium-5 img-cell small-order-1 medium-order-2"
+    class="small-card show-for-small-only"
     data-aos="fade-up"
     data-aos-duration="1000"
   >
-    <div
-      class="background background-left"
-      (mousemove)="mouseentercover2($event)"
-      (mouseleave)="mouseleave2()"
-      #imagecover2
-    >
-      <img
-        src="/assets/portfolio.PNG"
-        style="opacity: 0.9"
-        class="back-img"
-        alt=""
-      />
+    <div class="flex">
+      <a
+        href="https://github.com/tlauffs/portfolio-tlauffs"
+        target="_blank"
+        class="button hollow flex-child"
+        >View Code</a
+      >
     </div>
   </div>
+</div>
 </div>

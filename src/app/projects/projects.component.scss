@@ -1,85 +1,111 @@
 .letter {
-    position: relative !important;
-    display: inline-block !important;
-  }
+  position: relative !important;
+  display: inline-block !important;
+}
 
 .letter:nth-child(even):hover {
-    -webkit-animation: tada 1s;
-    animation: tada 1s;
-    color: #1BA098;
-  }
-  
+  -webkit-animation: tada 1s;
+  animation: tada 1s;
+  color: #1ba098;
+}
+
 .letter:nth-child(odd):hover {
-    -webkit-animation: tada 1s;
-    animation: tada 1s;
-    color: #DEB992;
+  -webkit-animation: tada 1s;
+  animation: tada 1s;
+  color: #deb992;
+}
+
+.card-custom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 37.5rem;
+  width: 100%;
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../../assets/nanotip.PNG");
+  @media only screen and (max-width: 40em) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../assets/nanotip.PNG");
   }
-  
-  .top{
-      height: 3rem;
+}
+
+.card-2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../../assets/portfolio.PNG");
+    background-size: cover;
+    background-position: center;
+    .card-content {
+      top: 1.5rem;
+    }
+  }
+  .card-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../../assets/portfolio.PNG");
+  @media only screen and (max-width: 40em) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../assets/portfolio.PNG");
+  }
+}
+
+.card-1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("../../assets/nanotip.PNG");
+    background-size: cover;
+    background-position: center;
+    .card-content {
+      top: 1.5rem;
+    }
   }
 
-.back-img {
-    max-height: 270px;
-    @media screen and (max-width: 39.9375em) {
-        max-height: 170px;
+.card-content {
+    position: absolute;
+    top: 18.75rem;
+    @media only screen and (max-width: 40em) {
+      top: 2rem;
     }
-}
-
-.img-cell{
-    @media screen and (max-width: 39.9375em) {
-        padding: 0rem;
-    }
-}
-
-.text-cell-left{
-    max-width: 450px;
-    margin-left: auto;
-    text-align: right;
-    padding-right: 2rem;
-    @media screen and (max-width: 39.9375em) {
-        padding: 0rem;
-        margin-top: 1rem;
-        text-align: center;
-    }
-}
-
-
-.text-cell-right{
-    max-width: 450px;
+    left: 1rem;
+    margin-right: 1rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
     text-align: left;
-    padding-left: 2rem;
-    @media screen and (max-width: 39.9375em) {
-        padding: 0rem;
-        margin-top: 1rem;
-        text-align: center;
-    }
+  }
+
+.title {
+  margin-bottom: 1.75rem;
 }
 
-
-.background {
-    background-color: rgba($color: #1BA098, $alpha: 1.0);
-    border-radius: 5px;
-    position: relative;
-    display: inline-block;
-    top:50%;
-    transform: translateY(-50%);
+.label {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  color: #cccccc;
+  background: #1d1d1d;
 }
 
-.background-right{
-    @media screen and (min-width: 40em) {
-        float: right;
-    }
-    transition: transform 0.1s ease;
+.flex {
+  display: flex;
 }
 
-.background-left{
-    @media screen and (min-width: 40em) {
-        float: left;
-    }
-    transition: transform 0.1s ease;
+.flex-child {
+  flex: 1 1 auto;
+  margin-right: 1rem;
 }
 
-.background:hover{
-    background-color: rgba($color: #1BA098, $alpha: 0);
+.small-card {
+    .flex-child {
+        margin-left: 1rem;
+      }
+      margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 37.5rem;
+  width: 100%;
 }

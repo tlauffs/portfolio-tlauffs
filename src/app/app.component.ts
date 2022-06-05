@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   }
 
   nav_open() {
-    this.navMenuWidth = 150;
+    this.navMenuWidth = 9.375;
     this.navOpen = true;
   }
   nav_close() {
