@@ -1,14 +1,5 @@
 <div class="side-nav" [ngStyle]="{ 'width.rem': navMenuWidth }">
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: center;
-      text-align: center;
-      white-space: nowrap;
-    "
-  >
+  <div class="inner-nav">
     <div>
       <button
         class="close-button"
@@ -19,6 +10,9 @@
       >
         <span aria-hidden="true">&times;</span>
       </button>
+    </div>
+    <div>
+      <img src="../assets/only_white_logo.png" class="logo" alt="">
     </div>
     <div
       class="nav-ele"
@@ -37,7 +31,7 @@
     >
       Contact
     </div>
-    <div style="padding-bottom: 4rem">
+    <div style="padding-bottom: 2rem">
       <div class="social-div" style="width: 1.2rem; margin: auto">
         <a class="socials" href="https://github.com/tlauffs" target="_blank">
           <svg

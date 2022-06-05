@@ -7,7 +7,20 @@
     backdrop-filter: blur(5px);
     z-index: 1000;
     transition: 0.5s;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.inner-nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.logo{
+    padding: 1.8rem;  
+    min-width: 9.375rem;
 }
 
 .title-bar {
