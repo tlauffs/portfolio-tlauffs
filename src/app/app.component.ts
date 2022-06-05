@@ -24,12 +24,7 @@ export class AppComponent implements OnInit {
     $(document).foundation();
     AOS.init();
   }
-
-  @HostListener('window:beforeunload')
-  reload() {
-      window.scrollTo(0, 0);
-  }
-
+  
   scroll(ele: string) {
     document.getElementById(ele)!.scrollIntoView({ behavior: 'smooth' });
   }
