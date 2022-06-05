@@ -26,24 +26,19 @@
       width: 100vw;
     }
 
-    .rotate {
-      animation: spinner 2s infinite;
+    .progress-loader {
+      margin-left: 50px;
+      width: 350px;
+      height: 50px;
+      -webkit-mask: linear-gradient(90deg, #1ba098 70%, #0000 0) left/20% 100%;
+      mask: linear-gradient(90deg, #1ba098 70%, #0000 0) left/20% 100%;
+      background: linear-gradient(#1ba098 0 0) left/0% 100% no-repeat #dbdcef;
+      animation: progress-loader 2s infinite steps(6);
     }
 
-    .spinner {
-      width: 96px;
-      height: 96px;
-      background: radial-gradient(farthest-side, #e60576 95%, #0000) 50% 0,
-        radial-gradient(farthest-side, #5626c4 95%, #0000) 50% 100%,
-        radial-gradient(farthest-side, #facd3d 95%, #0000) 100% 50%,
-        radial-gradient(farthest-side, #2cccc3 95%, #0000) 0 50%;
-      background-size: 24px 24px;
-      background-repeat: no-repeat;
-    }
-
-    @keyframes spinner {
-      to {
-        transform: rotate(1turn);
+    @keyframes progress-loader {
+      100% {
+        background-size: 120% 100%;
       }
     }
   </style>
@@ -57,9 +52,7 @@
   <body id="top">
     <app-root>
       <div class="loaderDiv">
-        <div class="rotate">
-          <div class="spinner"></div>
-        </div>
+        <div class="progress-loader"></div>
       </div>
     </app-root>
   </body>

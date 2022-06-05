@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import * as AOS from 'aos';
 declare var $: any;
 
@@ -16,6 +16,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     $(document).foundation();
     AOS.init();
+  }
+
+  @HostListener('window:beforeunload')
+  doSomething() {
+    window.scrollTo(0, 0);
   }
 
   scroll(ele: string) {
