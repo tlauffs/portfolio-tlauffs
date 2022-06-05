@@ -119,14 +119,14 @@
   }
 
 .letter:nth-child(even):hover {
-    -webkit-animation: rubberband 1s;
-    animation: rubberband 1s;
+    -webkit-animation: rubberBand 1s;
+    animation: rubberBand 1s;
     color: #1BA098;
   }
   
 .letter:nth-child(odd):hover {
-    -webkit-animation: rubberband 1s;
-    animation: rubberband 1s;
+    -webkit-animation: rubberBand 1s;
+    animation: rubberBand 1s;
     color: #DEB992;
   }
   
