@@ -1,6 +1,4 @@
-<div
-  class="grid-x section"
->
+<div class="grid-x section">
   <h3 class="cell" data-aos="fade-up" data-aos-duration="1000">
     <span class="letter">C</span>
     <span class="letter">o</span>
@@ -12,13 +10,61 @@
     <span class="letter">m</span>
     <span class="letter">e</span>
   </h3>
-  <div class="cell" style="margin-left: auto; margin-right: auto"  data-aos="fade-up" data-aos-duration="1000">
+  <div
+    class="cell"
+    style="margin-left: auto; margin-right: auto"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
     <p>
-     Whether you have a oppertunity, question or just want to say hi, <br> don't hesitate to use the form or reach out to me on one of my socials!
+      Whether you have a oppertunity, question or just want to say hi, <br />
+      don't hesitate to use the form or reach out to me on one of my socials!
     </p>
   </div>
-  <div class="cell" style="max-width: 700px; margin-left: auto; margin-right: auto" data-aos="fade-up" data-aos-duration="1000">
-    <form name="form-name" value="contactform"  method="POST">
+  <div
+    class="cell"
+    style="max-width: 700px; margin-left: auto; margin-right: auto"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <form [formGroup]="contactform" name="contactform" (ngSubmit)="onSubmit()">
+      <input
+        class="underline-3"
+        style="width: 100%; padding-bottom: 1rem"
+        formControlName="name"
+        type="text"
+        name="name"
+        placeholder="Name"
+      />
+      <input
+        class="underline-3"
+        style="width: 100%; padding-bottom: 1rem"
+        formControlName="email"
+        type="email"
+        name="email"
+        placeholder="Email"
+      />
+      <input
+        class="underline-3"
+        style="width: 100%; padding-bottom: 1rem"
+        formControlName="subject"
+        type="text"
+        name="subject"
+        placeholder="Subject"
+      />
+      <textarea
+        class="underline-3"
+        style="width: 100%; padding-bottom: 1rem"
+        style="min-height: 100px"
+        placeholder="Message"
+        name="message"
+        formControlName="message"
+      ></textarea>
+      <button class="button" style="width: 100%" type="submit">
+        Send Message!
+      </button>
+    </form>
+    <!-- <form name="form-name" value="contactform"  method="POST">
      
             <p class="underline-3" style="width: 100%">
               <label>
@@ -56,7 +102,6 @@
               Send Message!
             </button>
           </p>
-    </form>
+    </form> -->
   </div>
-
 </div>
