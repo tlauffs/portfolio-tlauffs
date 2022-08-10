@@ -2,6 +2,13 @@
   color: #e6f2ff;
 }
 
+.homepage-text {
+  width: 100%;
+  position: fixed;
+  right: min(5rem, 7vw);
+  margin-top: min(5rem, 5vh);
+}
+
 .sub-title {
   z-index: 10;
   position: relative !important;
@@ -14,16 +21,39 @@
 }
 
 .outer-container {
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  //overflow: hidden;
+}
+
+.outer-container-2 {
+  position: absolute;
+  overflow: hidden;
+  top: calc(100vh - 26rem);
+  margin-left: -9.375rem;
+  height: 26rem;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 64rem) {
+  .outer-container-2 {
+    margin-left: 0;
+  }
+}
+
+.background-container-2 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  width: 120%;
+  left: -10%;
 }
 
 .background-container {
-  position: relative;
- // width: 100%;
+  position: absolute;
+  width: 100%;
   height: 100vh;
   width: 120%;
   left: -10%;
@@ -32,72 +62,72 @@
 #building-1 {
   position: absolute;
   width: 100%;
-  height: 250px;
-  top: calc(100vh - 250px);
+  height: 14rem;
+  top: 6rem;
   background: url(/assets/building1.svg) center repeat-x;
   background-size: auto 100%;
 }
 
 #building-2 {
   position: absolute;
-  height: 200px;
   width: 100%;
-  top: calc(100vh - 275px);
+  height: 12rem;
+  top: 4rem;
   background: url(/assets/building2.svg) center repeat-x;
   background-size: auto 100%;
 }
 
 #building-3 {
   position: absolute;
-  height: 150px;
   width: 100%;
-  top: calc(100vh - 315px);
+  height: 10rem;
+  top: 2rem;
   background: url(/assets/building3.svg) center repeat-x;
   background-size: auto 100%;
 }
 
 #building-4 {
   position: absolute;
-  height: 125px;
   width: 100%;
-  top: calc(100vh - 350px);
+  height: 8rem;
+  top: 0rem;
   background: url(/assets/building4.svg) center repeat-x;
   background-size: auto 100%;
 }
 
 #building-bottom-1 {
   position: absolute;
-  height: 600px;
   width: 100%;
-  top: calc(100vh - 1px);
-  background-color: #1d1d1d;
-  background-size: auto 100%; 
+  height: 15rem;
+  top: 20rem;
+  background-color: #090e0d;
+  background-size: auto 100%;
 }
 
 #building-bottom-2 {
   position: absolute;
-  height: 100px;
   width: 100%;
-  top: calc(100vh - 75px);
-  background-color: #262626;
+  height: 15rem;
+  top: 16rem;
+  background-color: #141b1a;
   background-size: auto 100%;
 }
 
 #building-bottom-3 {
   position: absolute;
-  height: 200px;
   width: 100%;
-  top: calc(100vh - 165px);
-  background-color: #333333;
+  height: 15rem;
+  top: 12rem;
+  background-color: #202a29;
   background-size: auto 100%;
 }
 
 #building-bottom-4 {
   position: absolute;
-  height: 305px;
   width: 100%;
-  top: calc(100vh - 225px);
-  background-color: #404040;
+  height: 15rem;
+  top: 8rem;
+  background-color: #2d3635;
   background-size: auto 100%;
 }
 
@@ -106,9 +136,15 @@
   height: 100vh;
   width: 100%;
   top: 0;
- // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  background: radial-gradient(ellipse at bottom, rgba(153,153,153,1) 0%, rgba(29,29,29,1) 100%);
- //background-color: #595959;
+  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  /*
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(153, 153, 153, 1) 0%,
+    rgba(29, 29, 29, 1) 100%
+  );
+  */
+  background: #02080d;
   background-size: auto 100%;
 }
 
@@ -140,11 +176,10 @@
 }
 
 .layer {
-  position: absolute;
+  /* position: relative;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
-  height: 100vh;
 }
 /*
 b:hover {
@@ -157,11 +192,28 @@ b:hover {
 .letter:nth-child(even):hover {
   -webkit-animation: rubberBand 1s;
   animation: rubberBand 1s;
-  color: #1BA098;
+  color: #1ba098;
 }
 
 .letter:nth-child(odd):hover {
   -webkit-animation: rubberBand 1s;
   animation: rubberBand 1s;
-  color: #DEB992;
+  color: #deb992;
+}
+
+.main-wrapper {
+  background-color: #090e0d;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  margin-left: -9.375rem;
+}
+
+@media only screen and (max-width: 64rem) {
+  .outer-container-2 {
+    margin-left: 0;
+  }
+  .main-wrapper {
+    margin-left: 0;
+  }
 }

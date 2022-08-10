@@ -71,8 +71,8 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
   //primary: #2CCCC3,
-  primary: #1BA098,
-  secondary: #767676,
+  primary: #a7dad0,
+  secondary: #090e0d,
   success: #1779ba,
   warning: #ffae00,
   alert: #cc4b37,
@@ -302,7 +302,7 @@ $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: +40%);
-$button-color: $white;
+$button-color: $secondary-color;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-border: 1px solid transparent;

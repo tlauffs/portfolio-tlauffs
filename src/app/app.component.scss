@@ -1,97 +1,129 @@
 .side-nav {
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 10;
-    background-color: rgba($color: #181818, $alpha: 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 1000;
-    transition: 0.5s;
-    overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba($color: #181818, $alpha: 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  transition: 0.5s;
+  overflow-x: hidden;
 }
 
-.inner-nav{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    text-align: center;
-    white-space: nowrap;
+.inner-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.logo{
-    padding: 1.8rem 1.8rem 0rem 1.8rem; 
-    min-width: 9.375rem;
+.logo {
+  padding: 1.8rem 1.8rem 0rem 1.8rem;
+  min-width: 9.375rem;
 }
 
 .title-bar {
-    background-color: rgba($color: #181818, $alpha: 0.3);
-    padding: 0.2rem;
-    z-index: 100000;
-    position: fixed;
-    top: 0;
+  background-color: rgba($color: #181818, $alpha: 0.3);
+  padding: 0.2rem;
+  z-index: 100000;
+  position: fixed;
+  top: 0;
 }
 
 .top-bar {
-    background-color: rgba($color: #000000, $alpha: 0.3);
-    z-index: 1000;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  z-index: 1000;
 }
 
 .menu {
-    justify-content: right;
+  justify-content: right;
 }
 
-.button{
-    color: #e6f2ff;
+.button {
+  color: #e6f2ff;
 }
 
 .button:hover {
-  color: #1BA098;
+  color: #1ba098;
   filter: brightness(150%);
 }
 
 .nav-ele {
-    height: 50px;
-    line-height: 50px;
-    color: #808080;
-    border-bottom: 1px solid  #333333;
-   // border-top: 1px solid  #333333;
+  height: 50px;
+  line-height: 50px;
+  color: #808080;
+  border-bottom: 1px solid #333333;
+  // border-top: 1px solid  #333333;
 }
 
 .nav-ele:hover {
-    color: #1BA098;
-    filter: brightness(140%);
+  color: #1ba098;
+  filter: brightness(140%);
+}
+
+.close-button {
+  display: none;
 }
 
 .close-button:hover {
-    filter: brightness(140%);
+  filter: brightness(140%);
 }
 
 .socials:hover {
-    svg {
-        fill: #DEB992;
-    }
-    filter: brightness(120%);
+  svg {
+    fill: #deb992;
+  }
+  filter: brightness(120%);
 }
 
 .social-div:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .social-div {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-btn {
-    font-size:30px;
-    cursor:pointer;
-    position: fixed; 
-    top:2rem; 
-    left:2rem; 
-    z-index: 999;
-    transition: all 0.3s;
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 999;
+  transition: all 0.3s;
 }
 
 .menu-btn:hover {
-    color:#1BA098;
-    transform: scale(1.25);
+  color: #1ba098;
+  font-size: 2.5rem;
+  top: 1.75rem;
+  left: 1.75rem;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 9.375rem 1fr;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 64rem) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .close-button {
+    display: block;
+  }
+}
+@media not screen and (max-width: 64rem){
+  .side-nav {
+    width: 9.375rem !important;
+  }
 }

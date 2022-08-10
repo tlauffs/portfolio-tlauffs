@@ -23,6 +23,8 @@ export class HomepageComponent implements OnInit, AfterViewInit {
   inity = 0;
   speed = 0.2;
   @ViewChild('backgroundscene') scene: ElementRef | undefined;
+  @ViewChild('backgroundscene2') scene2: ElementRef | undefined;
+
  // @ViewChild('headertext') text: ElementRef | undefined;
 
   constructor() {}
@@ -31,12 +33,14 @@ export class HomepageComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     var parallaxInstance = new Parallax(this.scene?.nativeElement);
+    var parallaxInstance2 = new Parallax(this.scene2?.nativeElement);
     // var parallaxInstanceText = new Parallax(this.text?.nativeElement);
   }
 
   @HostListener('window:scroll', ['$event']) // for window scroll events
   onScroll(event: any) {
     let y = window.pageYOffset;
+      /*
     let layer1 = document.getElementById('building-1');
     let movement = -y * 0.1;
     layer1!.style.transform = 'translatey(' + movement + 'vh)';
@@ -52,11 +56,13 @@ export class HomepageComponent implements OnInit, AfterViewInit {
     layer3!.style.transform = 'translatey(' + movement + 'vh)';
     let layer3bottom =  document.getElementById('building-bottom-3');
     layer3bottom!.style.transform = 'translatey(' + movement + 'vh)';
+
     let layer4 = document.getElementById('building-4');
-    movement = -y * 0.07;
+    let movement = y * 0.07; 
     layer4!.style.transform = 'translatey(' + movement + 'vh)';
     let building4bottom = document.getElementById('building-bottom-4');
     building4bottom!.style.transform = 'translatey(' + movement + 'vh)';
+       */
   }
 
   scroll(ele: string) {
