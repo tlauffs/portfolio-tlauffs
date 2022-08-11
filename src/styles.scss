@@ -7,25 +7,33 @@
 html,
 body {
   height: 100%;
-  font-family: "Exo 2" !important;
+  font-family: 'Rokkitt', serif !important;
   margin: 0;
 }
 
 p {
-  font-family: "Alegreya Sans" !important;
-  color: #cccccc;
+  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+  color: #BFD5D3;
+  font-size: 0.9375rem;
+  line-height: 2rem;
+  word-spacing: 0.1em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: lighter;
+  color: #E7F1EF;
 }
 
 .green {
   //a7dad0
-  color: #1ba098;
+  color: #a7dad0;
 }
 
 .section {
   position: relative;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 5rem;
+  padding-top: 18rem;
   text-align: center;
 }
 
@@ -57,7 +65,7 @@ p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #deb992;
+  background-color: #3dc1c6;
   transform-origin: top right;
   transition: transform 0.25s ease-out;
 }
@@ -80,7 +88,7 @@ p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1ba098;
+  background-color: #a7dad0;
   transform-origin: -50% left;
   transition: transform 0.25s ease-out;
 }
@@ -103,7 +111,7 @@ p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1ba098;
+  background-color: #a7dad0;
   transform-origin: top left;
   transition: transform 0.25s ease-out;
 }

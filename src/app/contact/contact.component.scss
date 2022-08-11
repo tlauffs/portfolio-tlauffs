@@ -6,13 +6,13 @@
 .letter:nth-child(even):hover {
     -webkit-animation: jello 1s;
     animation: jello 1s;
-    color: #1BA098;
+    color: #a7dad0;
   }
   
 .letter:nth-child(odd):hover {
     -webkit-animation: jello 1s;
     animation: jello 1s;
-    color: #DEB992;
+    color: #3dc1c6;
   }
   
 input, textarea{
@@ -24,11 +24,11 @@ input, textarea{
 }
 
 .alert-sent {
-  background-color:#4ea6e4;
+  background-color:#72A8D3;
   padding: 0.85em 1em;
 }
 
 .alert-not-sent {
-  background-color:#cc0066;
+  background-color:#d19959;
   padding: 0.85em 1em;
 }

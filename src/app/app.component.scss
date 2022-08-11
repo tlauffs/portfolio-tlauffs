@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   z-index: 10;
-  background-color: rgba($color: #181818, $alpha: 0.2);
+  background-color: rgba($color: black, $alpha: 0.3);
   backdrop-filter: blur(5px);
   z-index: 1000;
   transition: 0.5s;
@@ -45,7 +45,7 @@
 }
 
 .button:hover {
-  color: #1ba098;
+  color: #a7dad0;
   filter: brightness(150%);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .nav-ele:hover {
-  color: #1ba098;
+  color: #a7dad0;
   filter: brightness(140%);
 }
 
@@ -72,7 +72,7 @@
 
 .socials:hover {
   svg {
-    fill: #deb992;
+    fill: #a7dad0;
   }
   filter: brightness(120%);
 }
@@ -97,7 +97,7 @@
 }
 
 .menu-btn:hover {
-  color: #1ba098;
+  color: #a7dad0;
   font-size: 2.5rem;
   top: 1.75rem;
   left: 1.75rem;
