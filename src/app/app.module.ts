@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PensComponent } from './pens/pens.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectsNewComponent } from './projects-new/projects-new.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     ProjectsComponent,
     ContactComponent,
-    PensComponent
+    PensComponent,
+    ProjectsNewComponent
   ],
   imports: [
     BrowserModule,

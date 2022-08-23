@@ -1,0 +1,40 @@
+<div class="section">
+  <h3 style="margin-bottom: 3rem" data-aos="fade-up" data-aos-duration="1000">
+    <span class="letter">P</span>
+    <span class="letter">r</span>
+    <span class="letter">o</span>
+    <span class="letter">j</span>
+    <span class="letter">e</span>
+    <span class="letter">c</span>
+    <span class="letter">t</span>
+    <span class="letter">s</span>
+  </h3>
+  <div class="project-grid-container">
+    <div class="projects-grid" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        *ngFor="let projects of projectList"
+        class="project-item item-plantes"
+        [style.--thumbnail] ="projects.imgThumb"
+      >
+        <div class="project-item-content">
+          <div class="project-item-content-title">
+            <p class="project-item-content-title-text">{{projects.title}}</p>
+          </div>
+          <div class="project-item-content-info">
+            <p>
+              {{projects.description}}
+            </p>
+          </div>
+          <div>
+            <a
+              href="#"
+              target="_blank"
+              class="button primary project-item-content-info"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

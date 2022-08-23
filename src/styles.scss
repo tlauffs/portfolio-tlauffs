@@ -11,6 +11,7 @@ body {
   margin: 0;
 }
 
+
 p {
   font-family: 'IBM Plex Sans Condensed', sans-serif !important;
   color: #BFD5D3;
@@ -36,6 +37,13 @@ h1,h2,h3,h4,h5,h6 {
   padding-top: 18rem;
   text-align: center;
 }
+
+@media only screen and (max-width: 40rem) {
+  .section {
+    padding-top: 8rem;
+  }
+}
+
 
 ::-webkit-scrollbar {
   width: 10px;
