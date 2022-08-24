@@ -20,6 +20,19 @@ p {
   word-spacing: 0.1em;
 }
 
+a {
+  transition: all 150ms;
+  color: #6fc3b2;
+  font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+  font-size: 0.9375rem;
+  line-height: 1rem;
+  word-spacing: 0.1em;
+}
+
+a:hover, a:focus {
+  color: #b7e1d9;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: lighter;
   color: #E7F1EF;
