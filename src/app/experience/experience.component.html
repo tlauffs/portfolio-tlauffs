@@ -1,5 +1,10 @@
 <div class="section">
-  <h3 style="margin-bottom: 2.5rem" data-aos="fade-up" data-aos-duration="1000">
+  <h3
+    class="flex-left"
+    style="margin-bottom: 2.5rem"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
     <span class="letter">E</span>
     <span class="letter">x</span>
     <span class="letter">p</span>
@@ -11,37 +16,80 @@
     <span class="letter">c</span>
     <span class="letter">e</span>
   </h3>
-  <div class="btn-row" data-aos="fade-up" data-aos-duration="1000">
-    <button
-      class="experience-tab-btn underline-btn-row-left activeleft"
-      (mousedown)="tab = 1"
-      [ngClass]="{ activeleftunderline: tab === 1 }"
-    >
-      <p class="btn-experience-text">Work</p>
-    </button>
-    <button
-      class="experience-tab-btn underline-btn-row-right activeright"
-      (mousedown)="tab = 2"
-      [ngClass]="{ activerightunderline: tab === 2 }"
-    >
-      <p class="btn-experience-text">Education</p>
-    </button>
-  </div>
-  <div *ngIf="tab === 1">
-    <div class="experience-inner">
-      <p class="section-header">Part-time Software Developer <span class="green">@Schüco</span></p>
-      <p class="section-date">November 2019 - Current</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aspernatur est nihil veniam temporibus obcaecati soluta, deleniti eaque et voluptatem?</p>
-      <p class="section-header">University Teaching Assistant <span class="green">@University Bielefeld</span></p>
-      <p class="section-date">Oktober 2018 - April 2019</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fugit consequatur aliquid sapiente. Nostrum sit distinctio numquam? Nam ad earum, accusamus voluptas ratione aliquid animi.</p>
+  <div>
+    <div class="flex-left" data-aos="fade-up" data-aos-duration="1000">
+      <button
+        class="experience-tab-btn activeleft"
+        (mousedown)="tab = 1"
+        [ngClass]="{ activeleftunderline: tab === 1 }"
+      >
+        <p class="btn-experience-text">Work</p>
+      </button>
+      <button
+        class="experience-tab-btn activeright"
+        (mousedown)="tab = 2"
+        [ngClass]="{ activerightunderline: tab === 2 }"
+      >
+        <p class="btn-experience-text">Education</p>
+      </button>
     </div>
-  </div>
-  <div *ngIf="tab === 2">
-    <div class="experience-inner">
-      <p class="section-header">B.Sc. Cognitive Computer Science <span class="green">@University Bielefeld</span></p>
-      <p class="section-date">Expected graduation date 2023</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat magnam corporis quidem numquam, itaque perspiciatis! Est perspiciatis eius accusamus non, quas harum dolorum soluta repellat illo molestias quam maxime?</p>
+    <div *ngIf="tab === 1" data-aos="fade-up" data-aos-duration="1000">
+      <div class="experience-inner">
+        <p class="section-header">
+          Part-time Software Developer <span class="green">@Schüco</span>
+        </p>
+        <p class="section-date">November 2019 - Current</p>
+        <p>
+          Built and Maintained a web app responsible for filtering and viewing
+          all of Schüco's technical documentation.
+        </p>
+        <p style="margin: 0">Some of the tools i worked with:</p>
+        <div>
+          <span class="label primary">Angular</span>
+          <span class="label primary">Elasticsearch</span>
+          <span class="label primary">Pimcore</span>
+          <span class="label primary">.NET</span>
+          <span class="label primary">PHP</span>
+          <span class="label primary">C#</span>
+        </div>
+        <p class="section-header">
+          University Teaching Assistant
+          <span class="green">@University Bielefeld</span>
+        </p>
+        <p class="section-date">Oktober 2018 - April 2019</p>
+        <p>
+          Worked as a teaching assiastant for the module 'Algorithms and
+          Datastructures'. Held weekly office hours, graded homework and exams.
+        </p>
+      </div>
+    </div>
+    <div *ngIf="tab === 2" data-aos="fade-up" data-aos-duration="1000">
+      <div class="experience-inner">
+        <p class="section-header">
+          B.Sc. Cognitive Computer Science
+          <span class="green">@University Bielefeld</span>
+        </p>
+        <p class="section-date">Expected graduation date 2023</p>
+        <p>Some of the courses i completed:</p>
+        <ul class="course-list">
+          <li>Mathematics for Computer Science</li>
+          <li>Computer Architecture</li>
+          <li>Basics of Machine Learning</li>
+          <li>Software Engineering</li>
+          <li>Computer Graphics</li>
+          <li>Formal Logic</li>
+          <li>Cryptography</li>
+        </ul>
+        <p style="margin: 0">Some of the languagues i worked with:</p>
+        <div>
+          <span class="label primary">Python</span>
+          <span class="label primary">C</span>
+          <span class="label primary">Java</span>
+          <span class="label primary">SQL</span>
+          <span class="label primary">Haskell</span>
+          <span class="label primary">x86 Assembly</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

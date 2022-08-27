@@ -48,7 +48,6 @@ h1,h2,h3,h4,h5,h6 {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 18rem;
-  text-align: center;
 }
 
 @media only screen and (max-width: 40rem) {
@@ -140,4 +139,14 @@ h1,h2,h3,h4,h5,h6 {
 .underline-3:hover:after {
   transform: scaleX(1);
   transform-origin: top right;
+}
+
+/* layout styles */
+
+.flex-left {
+  display: flex;
+  justify-content: left;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
