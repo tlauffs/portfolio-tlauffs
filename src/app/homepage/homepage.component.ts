@@ -25,6 +25,7 @@ export class HomepageComponent implements OnInit, AfterViewInit {
   @ViewChild('backgroundscene') scene: ElementRef | undefined;
   @ViewChild('backgroundscene2') scene2: ElementRef | undefined;
 
+
  // @ViewChild('headertext') text: ElementRef | undefined;
 
   constructor() {}

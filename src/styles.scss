@@ -57,21 +57,21 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-
+/*
 ::-webkit-scrollbar {
-  width: 10px;
-  background-color: #111122;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ebebeb;
-  border-radius: 10px;
+  background-color: #090e0d;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #6d6d6d;
+  border-radius: 5px;
+  background: #E7F1EF;
 }
+*/
 
 .underline {
   display: inline-block;

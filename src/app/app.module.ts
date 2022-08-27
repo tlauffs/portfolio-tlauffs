@@ -10,7 +10,8 @@ import { PensComponent } from './pens/pens.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsNewComponent } from './projects-new/projects-new.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ExperienceComponent } from './experience/experience.component'
 
 @NgModule({
   declarations: [
@@ -21,13 +22,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     ProjectsComponent,
     ContactComponent,
     PensComponent,
-    ProjectsNewComponent
+    ProjectsNewComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

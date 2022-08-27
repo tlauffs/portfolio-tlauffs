@@ -1,0 +1,47 @@
+<div class="section">
+  <h3 style="margin-bottom: 2.5rem" data-aos="fade-up" data-aos-duration="1000">
+    <span class="letter">E</span>
+    <span class="letter">x</span>
+    <span class="letter">p</span>
+    <span class="letter">e</span>
+    <span class="letter">r</span>
+    <span class="letter">i</span>
+    <span class="letter">e</span>
+    <span class="letter">n</span>
+    <span class="letter">c</span>
+    <span class="letter">e</span>
+  </h3>
+  <div class="btn-row" data-aos="fade-up" data-aos-duration="1000">
+    <button
+      class="experience-tab-btn underline-btn-row-left activeleft"
+      (mousedown)="tab = 1"
+      [ngClass]="{ activeleftunderline: tab === 1 }"
+    >
+      <p class="btn-experience-text">Work</p>
+    </button>
+    <button
+      class="experience-tab-btn underline-btn-row-right activeright"
+      (mousedown)="tab = 2"
+      [ngClass]="{ activerightunderline: tab === 2 }"
+    >
+      <p class="btn-experience-text">Education</p>
+    </button>
+  </div>
+  <div *ngIf="tab === 1">
+    <div class="experience-inner">
+      <p class="section-header">Part-time Software Developer <span class="green">@Schüco</span></p>
+      <p class="section-date">November 2019 - Current</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aspernatur est nihil veniam temporibus obcaecati soluta, deleniti eaque et voluptatem?</p>
+      <p class="section-header">University Teaching Assistant <span class="green">@University Bielefeld</span></p>
+      <p class="section-date">Oktober 2018 - April 2019</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fugit consequatur aliquid sapiente. Nostrum sit distinctio numquam? Nam ad earum, accusamus voluptas ratione aliquid animi.</p>
+    </div>
+  </div>
+  <div *ngIf="tab === 2">
+    <div class="experience-inner">
+      <p class="section-header">B.Sc. Cognitive Computer Science <span class="green">@University Bielefeld</span></p>
+      <p class="section-date">Expected graduation date 2023</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat magnam corporis quidem numquam, itaque perspiciatis! Est perspiciatis eius accusamus non, quas harum dolorum soluta repellat illo molestias quam maxime?</p>
+    </div>
+  </div>
+</div>

@@ -176,18 +176,8 @@
 }
 
 .layer {
-  /* position: relative;
-  top: 0;
-  left: 0; */
   width: 100%;
 }
-/*
-b:hover {
-  -webkit-animation: rubberBand 1s;
-  animation: rubberBand 1s;
-  color: #2CCCC3;
-}
-*/
 
 .letter:nth-child(even):hover {
   -webkit-animation: rubberBand 1s;
