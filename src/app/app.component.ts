@@ -27,6 +27,8 @@ export class AppComponent implements OnInit {
   
   scroll(ele: string) {
     document.getElementById(ele)!.scrollIntoView({ behavior: 'smooth' });
+    this.navMenuWidth = 0;
+    this.navOpen = false;
   }
 
   nav_open() {

@@ -50,9 +50,20 @@ h1,h2,h3,h4,h5,h6 {
   padding-top: 18rem;
 }
 
+.scroll-margin {
+  scroll-margin: -12rem;
+}
+
+.scroll-margin-small {
+  scroll-margin: -2rem;
+}
+
 @media only screen and (max-width: 40rem) {
   .section {
     padding-top: 8rem;
+  }
+  .scroll-margin {
+    scroll-margin: -2rem;
   }
 }
 
@@ -135,7 +146,6 @@ h1,h2,h3,h4,h5,h6 {
   transform-origin: top left;
   transition: transform 0.25s ease-out;
 }
-
 .underline-3:hover:after {
   transform: scaleX(1);
   transform-origin: top right;
