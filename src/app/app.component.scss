@@ -1,3 +1,14 @@
+
+.particles {
+  position:absolute;
+  top:-6px;
+  left:-3px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:radial-gradient(rgba(255,255,255,.5),rgba(255,255,255,0));;
+}
+
 .side-nav {
   position: fixed;
   top: 0;

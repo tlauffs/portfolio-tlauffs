@@ -39,4 +39,5 @@ export class AppComponent implements OnInit {
     this.navMenuWidth = 0;
     this.navOpen = false;
   }
+
 }

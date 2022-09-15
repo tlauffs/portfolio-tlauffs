@@ -1,126 +1,230 @@
-<div style="position: relative; height: 100vh">
-  <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh">
-    <div class="outer-container" style="margin: 0 !important">
-      <div class="background-container">
-        <div id="background-scene" #backgroundscene class="background-scene">
-          <div class="layer">
-            <div id="background-gradient"></div>
-          </div>
-          <div
-            class="layer animate__animated animate__fadeIn"
-            style="animation-delay: 1.5s"
-            data-depth="-0.05"
-            id="stars"
-          ></div>
-          <div
-            class="layer animate__animated animate__fadeIn"
-            style="animation-delay: 1.75s"
-            data-depth="0.02"
-            id="stars-small"
-          ></div>
+<div class="stars-fixed" style="z-index: 1">
+  <div id="background-scene" #backgroundscene>
+    <div class="layer">
+      <div id="background-gradient"></div>
+    </div>
+    <div
+      class="layer animate__animated animate__fadeIn"
+      style="animation-delay: 1.5s"
+      data-depth="-0.05"
+      id="stars"
+    ></div>
+    <div
+      class="layer animate__animated animate__fadeIn"
+      style="animation-delay: 1.75s"
+      data-depth="0.02"
+      id="stars-small"
+    ></div>
 
-          <div
-            class="layer animate__animated animate__fadeIn"
-            style="animation-delay: 2s"
-            data-depth="0.04"
-            id="stars-very-small"
-          ></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh">
-    <div style="overflow: hidden; text-align: right">
-      <div class="homepage-text">
-        <div
-          class="cell animate__animated animate__fadeInDown"
-          style="animation-delay: 1.5s; color: #ffffff"
-        >
-          <h1>
-            <span class="letter">T</span>
-            <span class="letter">i</span>
-            <span class="letter" style="margin-right: 0.5rem">m</span>
-            <span class="letter">L</span>
-            <span class="letter">a</span>
-            <span class="letter">u</span>
-            <span class="letter">f</span>
-            <span class="letter">f</span>
-            <span class="letter">s</span>
-          </h1>
-        </div>
-        <div
-          class="cell animate__animated animate__fadeInRight"
-          style="animation-delay: 1.5s; color: #cccccc"
-        >
-          <h4 class="underline"><i>Software Developer</i></h4>
-        </div>
-        <div
-          class="cell animate__animated animate__fadeInRight"
-          style="animation-delay: 1.5s; color: #cccccc"
-        >
-          <p class="underline-3">Try hovering things :)</p>
-        </div>
-        <div
-          class="cell animate__animated animate__fadeInRight"
-          style="animation-delay: 1.5s; color: #bfbfbf; margin-top: 3rem"
-        >
-          <div>
-            <button class="button hollow" (click)="scroll('footer')">
-              Contact me!
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="outer-container-2">
-    <div class="background-container-2">
-      <div id="background-scene-2" #backgroundscene2 class="background-scene">
-        <div class="layer" data-depth-x="0.8">
-          <div
-            class="animate__animated animate__fadeInUpBig"
-            style="animation-delay: 0.3s"
-          >
-            <div id="building-bottom-4"></div>
-            <div id="building-4"></div>
-          </div>
-        </div>
-        <div class="layer" data-depth-x="0.6">
-          <div
-            class="animate__animated animate__fadeInUpBig"
-            style="animation-delay: 0.6s"
-          >
-            <div id="building-bottom-3"></div>
-            <div id="building-3"></div>
-          </div>
-        </div>
-        <div class="layer" data-depth-x="0.4">
-          <div
-            class="animate__animated animate__fadeInUpBig"
-            style="animation-delay: 0.9s"
-          >
-            <div id="building-bottom-2"></div>
-            <div id="building-2"></div>
-          </div>
-        </div>
-        <div class="layer" data-depth-x="0.2">
-          <div
-            class="animate__animated animate__fadeInUpBig"
-            style="animation-delay: 1.2s"
-          >
-            <div id="building-bottom-1"></div>
-            <div id="building-1"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div
+      class="layer animate__animated animate__fadeIn"
+      style="animation-delay: 2s"
+      data-depth="0.04"
+      id="stars-very-small"
+    ></div>
   </div>
 </div>
-<div style="position: relative">
-  <div class="main-wrapper"></div>
-  <app-about-me id="aboutme" class="scroll-margin-small"></app-about-me>
-  <app-projects-new id="projects" class="scroll-margin"></app-projects-new>
-  <app-experience id="experience" class="scroll-margin"></app-experience>
-  <app-contact id="contact"></app-contact>
-  <app-footer id="footer"></app-footer>
+
+<div class="body-wrapper" style="position: relative; z-index: 3;">
+  <div class="homepage-text-style-2">
+    <div class="section-2">
+      <div
+        class="cell animate__animated animate__fadeInDown"
+        style="animation-delay: 1.5s; color: #ffffff"
+      >
+        <h1>
+          <span class="letter">T</span>
+          <span class="letter">i</span>
+          <span class="letter" style="margin-right: 0.5rem">m</span>
+          <span class="letter">L</span>
+          <span class="letter">a</span>
+          <span class="letter">u</span>
+          <span class="letter">f</span>
+          <span class="letter">f</span>
+          <span class="letter">s</span>
+        </h1>
+      </div>
+      <div
+        class="cell animate__animated animate__fadeInRight"
+        style="animation-delay: 1.5s; color: #cccccc"
+      >
+        <h4 class="underline">
+          <i>Software Developer</i>
+        </h4>
+      </div>
+      <div
+        class="cell animate__animated animate__fadeInRight"
+        style="animation-delay: 1.5s; color: #cccccc"
+      >
+        <p class="underline-3">Try hovering things :)</p>
+      </div>
+      <div
+        class="cell animate__animated animate__fadeInRight"
+        style="animation-delay: 1.5s; color: #bfbfbf; margin-top: 1.5rem"
+      >
+        <div>
+          <button
+            style="width: min(18rem, 40vw);"
+            class="button hollow"
+            (click)="scroll('footer')"
+          >
+            Contact me!
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-wrapper" id="top">
+
+    <div class="outer-container" style="transform-style: preserve-3d">
+      
+      <div class="background-container-2" style="transform-style: preserve-3d">
+
+        <div class="build-4-container">
+          <div
+            id="background-scene-2"
+            #backgroundscene2
+            class="positon-building"
+          >
+            <div class="layer" data-depth-x="0.8">
+              <div
+                class="animate__animated animate__fadeInUpBig"
+                style="animation-delay: 0.3s"
+              >
+                <div id="building-bottom-4"></div>
+                <div id="building-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="build-3-container">
+          <div
+            id="background-scene-3"
+            #backgroundscene3
+            class="positon-building"
+          >
+            <div class="layer" data-depth-x="0.6">
+              <div
+                class="animate__animated animate__fadeInUpBig"
+                style="animation-delay: 0.6s"
+              >
+                <div id="building-bottom-3"></div>
+                <div id="building-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="build-2-container">
+          <div
+            id="background-scene-4"
+            #backgroundscene4
+            class="positon-building"
+          >
+            <div class="layer" data-depth-x="0.4">
+              <div
+                class="animate__animated animate__fadeInUpBig"
+                style="animation-delay: 0.9s"
+              >
+                <div id="building-bottom-2"></div>
+                <div id="building-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="build-1-container">
+          <div
+            id="background-scene-5"
+            #backgroundscene5
+            class="positon-building"
+          >
+            <div class="layer" data-depth-x="0.2">
+              <div
+                class="animate__animated animate__fadeInUpBig"
+                style="animation-delay: 1.2s"
+              >
+                <div id="building-bottom-1"></div>
+                <div id="building-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </div>
+ 
+  </div>
+
+  <div style="position: relative">
+    <div class="main-wrapper"></div>
+    <app-about-me id="aboutme" class="scroll-margin-small"></app-about-me>
+    <app-projects-new id="projects" class="scroll-margin" (openModal)="openModal($event)"></app-projects-new>
+    <app-experience id="experience" class="scroll-margin"></app-experience>
+    <app-contact id="contact"></app-contact>
+    <app-footer id="footer"></app-footer>
+  </div>
+</div>
+
+<div *ngIf="modalopen" [@inOutAnimation] style="position: relative;">
+  <div class="modal-outer">
+    <div class="modal">
+      <button
+        class="modal-close-button"
+        aria-label="Close alert"
+        (click)="closeModal()"
+        type="button"
+      >
+        <span aria-hidden="true"><h3>&times;</h3></span>
+      </button>
+      <div class="modal-content">
+        <h2>{{ projectList[index].title }}</h2>
+        <p
+          class="text-width"
+          [innerHTML]="projectList[index].descriptionfull"
+        ></p>
+        <div>
+          <span
+            *ngFor="let tag of projectList[index].tags"
+            class="label primary"
+            >{{ tag }}</span
+          >
+        </div>
+        <div class="btn-wrapper modal-btn-row">
+          <a
+            href="{{ projectList[index].livesite }}"
+            target="_blank"
+            class="button btn-modal"
+            >View Site</a
+          >
+        </div>
+        <div class="btn-wrapper">
+          <a
+            href="{{ projectList[index].githublink }}"
+            target="_blank"
+            class="button hollow btn-modal"
+            >View Code</a
+          >
+        </div>
+        <div *ngIf="projectList[index].frontendmentorlink" class="btn-wrapper">
+          <a
+            href="{{ projectList[index].frontendmentorlink }}"
+            target="_blank"
+            class="btn-modal-clear"
+            >View FrontendMentor</a
+          >
+        </div>
+        <img
+          class="preview-img"
+          src="{{ projectList[index].preview }}"
+          alt=""
+        />
+        <img
+          *ngIf="projectList[index].previewsec"
+          class="preview-img"
+          src="{{ projectList[index].previewsec }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
 </div>

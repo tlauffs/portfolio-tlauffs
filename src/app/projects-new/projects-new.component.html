@@ -37,7 +37,7 @@
             <button
             *ngIf="projects.title !== 'Codepen'"
               class="button project-item-content-info"
-              (click)="openModal(index)"
+              (click)="openModalClick(index)"
             >
               View Project
             </button>
@@ -56,7 +56,8 @@
   </div>
 </div>
 
-<div *ngIf="modalopen" [@inOutAnimation] class="modal-wrapper">
+<!--
+<div *ngIf="modalopen" [@inOutAnimation]>
   <div class="modal-outer">
     <div class="modal">
       <button
@@ -119,3 +120,4 @@
     </div>
   </div>
 </div>
+-->
