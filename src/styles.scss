@@ -1,9 +1,4 @@
-@import "~foundation-sites/scss/foundation";
-@import "/src/assets/foundation/settings";
-@import "/src/assets/foundation/global";
-@include foundation-everything(true);
 
-/* You can add global styles to this file, and also import other style files */
 html,
 body {
   height: 100%;
@@ -11,6 +6,42 @@ body {
   margin: 0;
 }
 
+/* header styles */
+h1,h2,h3,h4{
+  font-weight: lighter;
+  color: #E7F1EF;
+  margin:0;
+}
+
+h1 {
+  font-size: 4.875rem;
+  line-height: 8rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.625rem;
+}
+h4 {
+  font-size: 2.25rem;
+}
+
+@media only screen and (max-width: 48rem){
+  h1 {
+    font-size: 2.625rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
 
 p {
   font-family: 'IBM Plex Sans Condensed', sans-serif !important;
@@ -27,20 +58,22 @@ a {
   font-size: 0.9375rem;
   line-height: 1rem;
   word-spacing: 0.1em;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
   color: #b7e1d9;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight: lighter;
-  color: #E7F1EF;
-}
-
 .green {
   //a7dad0
   color: #a7dad0;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section {
@@ -55,6 +88,48 @@ h1,h2,h3,h4,h5,h6 {
   .section {
     margin: 0;
   }
+}
+
+/* buttons */
+.btn{
+  background: #a7dad0;
+  color: #090e0d;
+  padding: 0.75rem 0.5rem;
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus  {
+  filter:brightness(130%);
+}
+
+.btn-hollow{
+  border: 1px #a7dad0 solid;
+  background: transparent;
+  color: #a7dad0;
+  padding: 0.75rem 0.5rem;
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+.btn-hollow:hover,
+.btn-hollow:focus  {
+  filter:brightness(170%);
+}
+
+
+/* tags */
+.label {
+  font-family: IBM Plex Sans Condensed,sans-serif;
+  margin: 0.25rem;
+  border-radius: 2px;
+  color: #e7f1ef;
+  background: #02080d;
+  display: inline-block;
+  padding: 0.33333rem 0.5rem;
+  font-size: .8rem;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: default;
 }
 
 .scroll-margin {
@@ -73,22 +148,6 @@ h1,h2,h3,h4,h5,h6 {
     scroll-margin: -2rem;
   }
 }
-
-/*
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #090e0d;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  border-radius: 5px;
-  background: #E7F1EF;
-}
-*/
 
 .underline {
   display: inline-block;

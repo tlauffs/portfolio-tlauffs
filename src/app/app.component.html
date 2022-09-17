@@ -1,6 +1,10 @@
 <div class="container-grid">
   <div style="position: relative">
-    <div class="side-nav" [ngStyle]="{ 'width.rem': navMenuWidth }">
+    <div
+      class="side-nav animate__animated animate__fadeInLeft"
+      style="animation-delay: 1.2s;"
+      [ngStyle]="{ 'width.rem': navMenuWidth }"
+    >
       <div class="inner-nav">
         <div>
           <button
@@ -8,13 +12,12 @@
             (click)="nav_close()"
             aria-label="Close alert"
             type="button"
-            data-close
           >
-            <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">&#x2715;</span>
           </button>
         </div>
         <div>
-          <img src="../assets/only_white_logo.png" class="logo" alt="" />
+          <img src="../assets/only_white_logo.png" class="logo" alt="" /> 
         </div>
         <div
           class="nav-ele"
@@ -123,9 +126,9 @@
       (click)="nav_open()"
       >&#9776;</span
     >
-    <div class="grid-x grid-margin.x">
-      <div class="cell auto" style="position: relative; width: 100%">
-            <app-homepage #homecomp></app-homepage>
+    <div>
+      <div style="position: relative; width: 100%">
+        <app-homepage #homecomp></app-homepage>
       </div>
     </div>
   </div>

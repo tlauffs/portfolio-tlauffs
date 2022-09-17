@@ -2,8 +2,6 @@
   <h3
     class="flex-left"
     style="margin-bottom: 2.5rem"
-    data-aos="fade-up"
-    data-aos-duration="1000"
   >
     <span class="letter">E</span>
     <span class="letter">x</span>
@@ -17,7 +15,7 @@
     <span class="letter">e</span>
   </h3>
   <div>
-    <div class="flex-left" data-aos="fade-up" data-aos-duration="1000">
+    <div class="flex-left">
       <button
         class="experience-tab-btn activeleft"
         (mousedown)="tab = 1"
@@ -33,7 +31,7 @@
         <p class="btn-experience-text">Education</p>
       </button>
     </div>
-    <div *ngIf="tab === 1" data-aos="fade-up" data-aos-duration="1000">
+    <div *ngIf="tab === 1">
       <div class="experience-inner">
         <p class="section-header">
           Part-time Software Developer <span class="green">@Schüco</span>
@@ -45,12 +43,12 @@
         </p>
         <p style="margin: 0">Some of the tools i worked with:</p>
         <div>
-          <span class="label primary">Angular</span>
-          <span class="label primary">Elasticsearch</span>
-          <span class="label primary">Pimcore</span>
-          <span class="label primary">.NET</span>
-          <span class="label primary">PHP</span>
-          <span class="label primary">C#</span>
+          <span class="label">Angular</span>
+          <span class="label">Elasticsearch</span>
+          <span class="label">Pimcore</span>
+          <span class="label">.NET</span>
+          <span class="label">PHP</span>
+          <span class="label">C#</span>
         </div>
         <p class="section-header">
           University Teaching Assistant
@@ -63,7 +61,7 @@
         </p>
       </div>
     </div>
-    <div *ngIf="tab === 2" data-aos="fade-up" data-aos-duration="1000">
+    <div *ngIf="tab === 2">
       <div class="experience-inner">
         <p class="section-header">
           B.Sc. Cognitive Computer Science

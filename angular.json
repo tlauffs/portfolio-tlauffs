@@ -32,13 +32,10 @@
 						"styles": [
 							"src/styles.scss",
 							"node_modules/animate.css/animate.min.css"
-						/*	"node_modules/aos/dist/aos.css" */
-						/*	"node_modules/foundation-sites/dist/css/foundation.min.css" */
 						],
 						"scripts": [
 							"node_modules/jquery/dist/jquery.min.js",
 							"node_modules/@popperjs/core/dist/umd/popper.min.js",
-							"node_modules/foundation-sites/dist/js/foundation.min.js",
 							"node_modules/parallax-js/dist/parallax.min.js"
 						]
 					},
@@ -107,13 +104,10 @@
 						"styles": [
 							"src/styles.scss",
 							"node_modules/animate.css/animate.min.css"
-						/*	"node_modules/aos/dist/aos.css" */
-						/*	"node_modules/foundation-sites/dist/css/foundation.min.css" */
 						],
 						"scripts": [
 							"node_modules/jquery/dist/jquery.min.js",
 							"node_modules/@popperjs/core/dist/umd/popper.min.js",
-							"node_modules/foundation-sites/dist/js/foundation.min.js",
 							"node_modules/parallax-js/dist/parallax.min.js"
 						]
 					}

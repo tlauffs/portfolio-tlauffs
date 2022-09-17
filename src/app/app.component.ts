@@ -21,8 +21,6 @@ export class AppComponent implements OnInit {
   navOpen = false;
 
   ngOnInit() {
-    $(document).foundation();
-    AOS.init();
   }
   
   scroll(ele: string) {
@@ -39,5 +37,4 @@ export class AppComponent implements OnInit {
     this.navMenuWidth = 0;
     this.navOpen = false;
   }
-
 }

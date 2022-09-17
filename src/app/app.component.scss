@@ -29,8 +29,8 @@
 }
 
 .logo {
-  padding: 1.8rem 1.8rem 0rem 1.8rem;
-  min-width: 9.375rem;
+  margin-top: 1.5rem;
+  max-width: 6rem;
 }
 
 .menu {
@@ -61,7 +61,19 @@
 
 .close-button {
   display: none;
+  position: absolute;
+  top:0.5rem;
+  right:0.5rem;
+  background-color: transparent;
+  border: none;
+  color: #cccccc;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
+.close-button:hover {
+  filter: brightness(140%);
+}
+
 
 .close-button:hover {
   filter: brightness(140%);
@@ -91,13 +103,14 @@
   left: 2rem;
   z-index: 999;
   transition: all 0.3s;
+  color: #ffffff;
 }
 
 .menu-btn:hover {
-  color: #a7dad0;
   font-size: 2.5rem;
   top: 1.75rem;
   left: 1.75rem;
+  color: #a7dad0;
 }
 
 .container-grid {

@@ -67,7 +67,7 @@
 .outer-container {
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 .positon-building {
@@ -79,7 +79,7 @@
   top:0;
   left:0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .homepage-text {
@@ -100,16 +100,21 @@
  transform: translateZ(-150px) scale(16);
 }
 
-.section-2 {
+.name-section {
   position: relative;
-  margin: min(10rem, 8vh) min(7rem, 7vh);
-  text-align: center;
+  //
+  margin: 5rem 8rem;
+  text-align: right;
 }
 
 @media only screen and (max-width: 64rem) {
   .homepage-text-style-2 {
     margin: 0;
     width: 100%;
+  }
+  .name-section {
+    margin: min(10rem, 8vh) 0;
+    text-align: center;  
   }
 }
 
@@ -216,14 +221,6 @@
   height: 100vh;
   width: 100%;
   top: 0;
-  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  /*
-  background: radial-gradient(
-    ellipse at bottom,
-    rgba(153, 153, 153, 1) 0%,
-    rgba(29, 29, 29, 1) 100%
-  );
-  */
   background: #02080d;
   background-size: auto 100%;
 }
@@ -279,6 +276,8 @@
 }
 
 
+/* modal styles*/
+
 .modal-outer {
   position: fixed;
   z-index: 1000;
@@ -328,14 +327,6 @@
   font-size: 1.5rem;
 }
 
-.label {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  margin: 0.25rem;
-  border-radius: 2px;
-  color: #E7F1EF;
-  background: #02080d;
-}
-
 .modal-btn-row {
   margin-top: 1rem;
 }
@@ -344,8 +335,10 @@
   width: 100%;
 }
 
+
 .btn-modal{
-  width: min(25rem, 100%)
+  width: min(25rem,100%);
+  margin-bottom: 1rem;
 }
 
 .btn-modal-clear {

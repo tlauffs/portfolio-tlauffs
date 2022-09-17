@@ -1,5 +1,5 @@
-<div class="grid-x section">
-  <h3 class="cell flex-left" data-aos="fade-up" data-aos-duration="1000" style="margin-bottom: 2rem;">
+<div class="section">
+  <h3 class="flex-left" style="margin-bottom: 2rem;">
     <span class="letter">C</span>
     <span class="letter">o</span>
     <span class="letter">n</span>
@@ -11,10 +11,8 @@
     <span class="letter">e</span>
   </h3>
   <div
-    class="cell"
     style="margin-left: auto; margin-right: auto;"
-    data-aos="fade-up"
-    data-aos-duration="1000"
+
   >
     <p style="max-width: 37.5rem; margin-left: auto; margin-right: auto">
       Whether you have a oppertunity, question or just want to say hi,
@@ -22,10 +20,7 @@
     </p>
   </div>
   <div
-    class="cell"
     style="max-width: 37.5rem; margin-left: auto; margin-right: auto"
-    data-aos="fade-up"
-    data-aos-duration="1000"
   >
     <form [formGroup]="contactform" name="contactform" (ngSubmit)="onSubmit()">
       <input
@@ -60,54 +55,15 @@
         name="message"
         formControlName="message"
       ></textarea>
-      <button class="button" style="width: 100%; margin-top: 1rem" type="submit">
+      <button class="btn" style="width: 100%; margin-top: 1rem" type="submit">
         Send Message!
       </button>
     </form>
     <div *ngIf="formsent" class="alert-sent">
-      <p style="margin: 0; color:white">Thank You! Your message has been sent.</p>
+      <p style="margin: 1rem 0; color:white">Thank You! Your message has been sent.</p>
     </div>
     <div *ngIf="formproblem" class="alert-not-sent">
       <p style="margin: 0; color:white">Looks like there was a problem. Feel free to contact me on one of my socials.</p>
     </div>
-    <!-- <form name="form-name" value="contactform"  method="POST">
-     
-            <p class="underline-3" style="width: 100%">
-              <label>
-                <input type="text" name="name" placeholder="Name" />
-              </label>
-            </p>
-         
-
-            <p class="underline-3" style="width: 100%">
-              <label>
-                <input type="text" name="email" placeholder="Email" />
-              </label>
-            </p>
-        
-  
-            <p class="underline-3" style="width: 100%">
-              <label>
-                <input type="text" name="subject" placeholder="Subject" />
-              </label>
-            </p>
-    
-      
-            <p class="underline-3" style="width: 100%">
-              <label>
-                <textarea
-                  style="min-height: 100px"
-                  placeholder="Message"
-                  name="message"
-                ></textarea>
-              </label>
-            </p>
-
-          <p class="cell contact-cell">
-            <button class="button" style="width: 100%" type="submit">
-              Send Message!
-            </button>
-          </p>
-    </form> -->
   </div>
 </div>

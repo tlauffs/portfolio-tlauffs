@@ -25,12 +25,12 @@
   </div>
 </div>
 
-<div class="body-wrapper" style="position: relative; z-index: 3;">
+<div class="body-wrapper" style="position: relative; z-index: 3">
   <div class="homepage-text-style-2">
-    <div class="section-2">
+    <div class="name-section">
       <div
-        class="cell animate__animated animate__fadeInDown"
-        style="animation-delay: 1.5s; color: #ffffff"
+        class="animate__animated animate__fadeInDown"
+        style="animation-delay: 1s; color: #ffffff"
       >
         <h1>
           <span class="letter">T</span>
@@ -45,27 +45,27 @@
         </h1>
       </div>
       <div
-        class="cell animate__animated animate__fadeInRight"
-        style="animation-delay: 1.5s; color: #cccccc"
+        class="animate__animated animate__fadeInUp"
+        style="animation-delay: 1s; color: #cccccc"
       >
         <h4 class="underline">
           <i>Software Developer</i>
         </h4>
       </div>
       <div
-        class="cell animate__animated animate__fadeInRight"
-        style="animation-delay: 1.5s; color: #cccccc"
+        class="animate__animated animate__fadeInUp"
+        style="animation-delay: 1s; color: #cccccc"
       >
         <p class="underline-3">Try hovering things :)</p>
       </div>
       <div
-        class="cell animate__animated animate__fadeInRight"
-        style="animation-delay: 1.5s; color: #bfbfbf; margin-top: 1.5rem"
+        class="animate__animated animate__fadeInUp"
+        style="animation-delay: 1s; color: #bfbfbf; margin-top: 1.5rem"
       >
         <div>
           <button
-            style="width: min(18rem, 40vw);"
-            class="button hollow"
+            style="width: min(18rem, 40vw)"
+            class="btn-hollow"
             (click)="scroll('footer')"
           >
             Contact me!
@@ -76,11 +76,8 @@
   </div>
 
   <div class="background-wrapper" id="top">
-
     <div class="outer-container" style="transform-style: preserve-3d">
-      
       <div class="background-container-2" style="transform-style: preserve-3d">
-
         <div class="build-4-container">
           <div
             id="background-scene-2"
@@ -107,7 +104,7 @@
             <div class="layer" data-depth-x="0.6">
               <div
                 class="animate__animated animate__fadeInUpBig"
-                style="animation-delay: 0.6s"
+                style="animation-delay: 0.3s"
               >
                 <div id="building-bottom-3"></div>
                 <div id="building-3"></div>
@@ -124,7 +121,7 @@
             <div class="layer" data-depth-x="0.4">
               <div
                 class="animate__animated animate__fadeInUpBig"
-                style="animation-delay: 0.9s"
+                style="animation-delay: 0.3s"
               >
                 <div id="building-bottom-2"></div>
                 <div id="building-2"></div>
@@ -141,7 +138,7 @@
             <div class="layer" data-depth-x="0.2">
               <div
                 class="animate__animated animate__fadeInUpBig"
-                style="animation-delay: 1.2s"
+                style="animation-delay: 0.3s"
               >
                 <div id="building-bottom-1"></div>
                 <div id="building-1"></div>
@@ -150,22 +147,24 @@
           </div>
         </div>
       </div>
-            
     </div>
- 
   </div>
 
   <div style="position: relative">
     <div class="main-wrapper"></div>
     <app-about-me id="aboutme" class="scroll-margin-small"></app-about-me>
-    <app-projects-new id="projects" class="scroll-margin" (openModal)="openModal($event)"></app-projects-new>
+    <app-projects-new
+      id="projects"
+      class="scroll-margin"
+      (openModal)="openModal($event)"
+    ></app-projects-new>
     <app-experience id="experience" class="scroll-margin"></app-experience>
     <app-contact id="contact"></app-contact>
     <app-footer id="footer"></app-footer>
   </div>
 </div>
 
-<div *ngIf="modalopen" [@inOutAnimation] style="position: relative;">
+<div *ngIf="modalopen" [@inOutAnimation] style="position: relative">
   <div class="modal-outer">
     <div class="modal">
       <button
@@ -185,25 +184,19 @@
         <div>
           <span
             *ngFor="let tag of projectList[index].tags"
-            class="label primary"
+            class="label"
             >{{ tag }}</span
           >
         </div>
         <div class="btn-wrapper modal-btn-row">
-          <a
-            href="{{ projectList[index].livesite }}"
-            target="_blank"
-            class="button btn-modal"
-            >View Site</a
-          >
+          <a href="{{ projectList[index].livesite }}" target="_blank">
+            <button class="btn btn-modal">View Site</button>
+          </a>
         </div>
         <div class="btn-wrapper">
-          <a
-            href="{{ projectList[index].githublink }}"
-            target="_blank"
-            class="button hollow btn-modal"
-            >View Code</a
-          >
+          <a href="{{ projectList[index].githublink }}" target="_blank">
+            <button class="btn-hollow btn-modal">View Code</button>
+          </a>
         </div>
         <div *ngIf="projectList[index].frontendmentorlink" class="btn-wrapper">
           <a

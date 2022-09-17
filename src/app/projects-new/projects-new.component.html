@@ -1,5 +1,5 @@
 <div class="section">
-  <h3 class="flex-left" style="margin-bottom: 2.5rem;" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="flex-left" style="margin-bottom: 2.5rem">
     <span class="letter">F</span>
     <span class="letter">e</span>
     <span class="letter">a</span>
@@ -18,7 +18,7 @@
     <span class="letter">s</span>
   </h3>
   <div class="project-grid-container">
-    <div class="projects-grid" data-aos="fade-up" data-aos-duration="1000">
+    <div class="projects-grid">
       <div
         *ngFor="let projects of projectList; let index = index"
         class="project-item item-plantes"
@@ -35,19 +35,20 @@
           </div>
           <div>
             <button
-            *ngIf="projects.title !== 'Codepen'"
-              class="button project-item-content-info"
+              *ngIf="projects.title !== 'Codepen'"
+              class="btn project-item-content-info"
               (click)="openModalClick(index)"
             >
               View Project
             </button>
             <a
-            *ngIf="projects.title === 'Codepen'"
-              class="button project-item-content-info"
+              *ngIf="projects.title === 'Codepen'"
               target="_blank"
               href="https://codepen.io/tlauffs"
             >
-              View Codepen
+              <button class="btn project-item-content-info">
+                View Codepen
+              </button>
             </a>
           </div>
         </div>
@@ -55,69 +56,3 @@
     </div>
   </div>
 </div>
-
-<!--
-<div *ngIf="modalopen" [@inOutAnimation]>
-  <div class="modal-outer">
-    <div class="modal">
-      <button
-        class="modal-close-button"
-        aria-label="Close alert"
-        (click)="closeModal()"
-        type="button"
-      >
-        <span aria-hidden="true"><h3>&times;</h3></span>
-      </button>
-      <div class="modal-content">
-        <h2>{{ projectList[index].title }}</h2>
-        <p
-          class="text-width"
-          [innerHTML]="projectList[index].descriptionfull"
-        ></p>
-        <div>
-          <span
-            *ngFor="let tag of projectList[index].tags"
-            class="label primary"
-            >{{ tag }}</span
-          >
-        </div>
-        <div class="btn-wrapper modal-btn-row">
-          <a
-            href="{{ projectList[index].livesite }}"
-            target="_blank"
-            class="button btn-modal"
-            >View Site</a
-          >
-        </div>
-        <div class="btn-wrapper">
-          <a
-            href="{{ projectList[index].githublink }}"
-            target="_blank"
-            class="button hollow btn-modal"
-            >View Code</a
-          >
-        </div>
-        <div *ngIf="projectList[index].frontendmentorlink" class="btn-wrapper">
-          <a
-            href="{{ projectList[index].frontendmentorlink }}"
-            target="_blank"
-            class="btn-modal-clear"
-            >View FrontendMentor</a
-          >
-        </div>
-        <img
-          class="preview-img"
-          src="{{ projectList[index].preview }}"
-          alt=""
-        />
-        <img
-          *ngIf="projectList[index].previewsec"
-          class="preview-img"
-          src="{{ projectList[index].previewsec }}"
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
-</div>
--->
