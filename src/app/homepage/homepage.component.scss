@@ -13,6 +13,22 @@
   }
 }
 
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #cccccc;
+  font-size: 1.75rem;
+  cursor: pointer;
+  transition: all 150ms;
+}
+.close-button:hover {
+  filter: brightness(140%);
+  transform: scale(1.1);
+}
+
 .background-wrapper {
   position: relative; 
   height: 100vh; 

@@ -37,15 +37,6 @@
   justify-content: right;
 }
 
-.button {
-  color: #e6f2ff;
-}
-
-.button:hover {
-  color: #a7dad0;
-  filter: brightness(150%);
-}
-
 .nav-ele {
   height: 50px;
   line-height: 50px;
@@ -70,11 +61,6 @@
   font-size: 1.25rem;
   cursor: pointer;
 }
-.close-button:hover {
-  filter: brightness(140%);
-}
-
-
 .close-button:hover {
   filter: brightness(140%);
 }
