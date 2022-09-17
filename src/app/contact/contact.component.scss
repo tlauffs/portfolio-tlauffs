@@ -33,7 +33,7 @@ input, textarea{
 .alert-not-sent {
   background-color:#d19959;
   box-sizing: border-box;
-  padding: 0.75em 1em;
+  padding: 0.75rem 1rem;
   margin-top: 1rem;
 }
 
@@ -44,4 +44,8 @@ input, textarea {
   outline: none;
   border: none;
   padding: 0.75rem 1rem;
+}
+
+textarea {
+  resize: vertical;
 }
