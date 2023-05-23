@@ -1,9 +1,9 @@
 [
   {
     "imgThumb": "url('../../assets/bookshelf.PNG')",
-    "title": "CSS Bookshlef",
-    "description": "A bookshlef i made using purely CSS. Also has some fun animations :)",
-    "descriptionfull": "A bookshlef i made using purely CSS. Also has some fun animations :).",
+    "title": "CSS Bookshelf",
+    "description": "A bookshelf I made using purely CSS. Also has some fun animations :)",
+    "descriptionfull": "A bookshelf I made using purely CSS. Also has some fun animations :).",
     "tags": ["CSS", "Animations"],
     "githublink": "https://github.com/tlauffs/css_art",
     "livesite": "https://pure-css-bookshelf.netlify.app/",
